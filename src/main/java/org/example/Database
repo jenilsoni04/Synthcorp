@@ -1,0 +1,25 @@
+CREATE TABLE produced_laptops (
+    id SERIAL PRIMARY KEY,
+    quantity INTEGER,
+    production_date TIMESTAMP WITHOUT TIME ZONE
+);
+
+CREATE TABLE raw_materials (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50),
+    quantity INTEGER,
+    min_stock_req INTEGER
+);
+
+CREATE TABLE inventory_logs (
+     id SERIAL PRIMARY KEY,
+     product_used_description TEXT,
+     log_date DATE,
+     log_timestamp TIMESTAMP;
+}
+     CREATE TABLE defective_products (
+         id SERIAL PRIMARY KEY,
+         quantity INT NOT NULL,
+         reason TEXT,
+         timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+     );

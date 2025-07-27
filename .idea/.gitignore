@@ -1,0 +1,5 @@
+#fault ignored files
+.idea/
+*.iml
+/shelf/
+/workspace.xml
